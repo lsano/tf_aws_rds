@@ -117,6 +117,11 @@ variable "backup_retention_period" {
     default = 0
 }
 
+variable "storage_encrypted" {
+    description = "Specifies whether the DB instance is encrypted."
+    default = false
+}
+
 variable "tags" {
   description = "A map of tags to add to all resources"
   default     = {}
